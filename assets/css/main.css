@@ -2735,7 +2735,7 @@
 		line-height: 3.25em;
 		position: absolute;
 		text-align: right;
-		top: 4em;
+		top: 2em;
 		width: 100%;
 		z-index: 10001;
 	}
@@ -2944,7 +2944,7 @@
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
-		border-top: 0.5em solid #5385c1;
+		/* border-top: 0.5em solid #5385c1; */
 	}
 
 		#banner h1 {
