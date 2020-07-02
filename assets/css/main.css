@@ -1797,6 +1797,7 @@
 
 			section.wrapper header h2, article.wrapper header h2 {
 				font-size: 2.75em;
+				font-weight: bolder;
 				margin: 0 0 .5em 0;
 			}
 
