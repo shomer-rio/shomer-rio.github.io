@@ -1756,6 +1756,15 @@
 		text-align: right;
 	}
 
+	.values {
+		border-bottom: 1px solid #dbdbdb;
+		padding-top: 2em;
+	}
+
+	.values h1, h2, h3, h4, h5, h6 {
+		font-weight: bolder;
+	}
+
 	.inner {
 		max-width: 75em;
 		margin: 0 auto;
