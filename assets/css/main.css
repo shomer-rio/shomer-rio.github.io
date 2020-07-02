@@ -1761,12 +1761,20 @@
 		padding-top: 2em;
 	}
 
+	.values b {
+		color: inherit;
+	}
+
 	.values h1, h2, h3, h4, h5, h6 {
 		font-weight: bolder;
 	}
 
 	.values-last {
 		padding-top: 2em;	
+	}
+
+	.values-last b {
+		color: inherit;
 	}
 
 	.values-last h1, h2, h3, h4, h5, h6 {
