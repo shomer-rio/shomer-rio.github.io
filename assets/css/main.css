@@ -2183,6 +2183,7 @@
 
 /* Box */
 	#chanichimot {
+		border: none;
 		margin-bottom: 0em;
 		padding: 0em;
 		height: 400px;
