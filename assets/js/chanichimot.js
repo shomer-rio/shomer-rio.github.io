@@ -16,6 +16,7 @@ var COLORS = [
     [139, 0, 255]
     ];
 var COLOR = [0,0,0] // black
+var color_step = ~~(Math.random() * COLORS.length);
 
 var step = 0;
 
@@ -39,7 +40,7 @@ function inside(){
 }
 
 function pick_color(){
-    return COLORS[~~random(COLORS.length-1)]
+    return COLORS[(color_step++) % COLORS.length]
 }
 
 function draw() {
