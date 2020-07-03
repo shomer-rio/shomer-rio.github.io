@@ -1,4 +1,22 @@
 var SHOW_CLUE = true;
+var COLORS = [
+    //'red'
+    [255, 0, 0],
+    // 'orange'
+    [255, 127, 0],
+    // 'yellow'
+    [255, 255, 0],
+    // 'green'
+    [0, 255, 0],
+    // 'blue'
+    [0, 0, 255],
+    // 'indigo'
+    [46, 43, 95],
+    // 'violet'
+    [139, 0, 255]
+    ];
+var COLOR = [0,0,0] // black
+
 var step = 0;
 
 let symmetry = 6;
@@ -20,6 +38,10 @@ function inside(){
     return (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height);
 }
 
+function pick_color(){
+    return COLORS[~~random(COLORS.length-1)]
+}
+
 function draw() {
     translate(width / 2, height / 2);
 
@@ -27,23 +49,18 @@ function draw() {
         magen_david(step++, 20);
         return;
     }
-    
-    stroke(128);
-
     /* Verifica se o mouse está dentro da área de desenho */
     if (inside()) {
-        let mx = mouseX - width / 2;
-        let my = mouseY - height / 2;
-        let pmx = pmouseX - width / 2;
-        let pmy = pmouseY - height / 2;
-        
         /* Verifica se o mouse está pressionado */
-        
         if (mouseIsPressed) {
+            let mx = mouseX - width / 2;
+            let my = mouseY - height / 2;
+            let pmx = pmouseX - width / 2;
+            let pmy = pmouseY - height / 2;
+            strokeWeight(stroke_weight);
+            stroke(COLOR[0], COLOR[1], COLOR[2]);
             for (let i = 0; i < symmetry; i++) {
-                rotate(angle);
-                strokeWeight(stroke_weight);
-                stroke(100);
+                rotate(angle);                
                 line(mx, my, pmx, pmy);
                 push();
                 scale(1, -1);
@@ -59,6 +76,7 @@ function mousePressed() {
         background(255);
         SHOW_CLUE = false;
     }
+    COLOR = pick_color();
 }
 
 function windowResized() {
