@@ -1,3 +1,4 @@
+var PEN = true;
 var SHOW_CLUE = true;
 var COLORS = [
     //'red'
@@ -44,6 +45,9 @@ function pick_color(){
 }
 
 function draw() {
+    if (!PEN) {
+        return
+    }
     translate(width / 2, height / 2);
 
     if (SHOW_CLUE && !(frameCount % 4)){
@@ -73,11 +77,19 @@ function draw() {
 }
 
 function mousePressed() {
-    if (SHOW_CLUE && inside()){
+    let INSIDE = inside();
+    if (!INSIDE) {
+        PEN = false;
+    }
+    if (SHOW_CLUE && INSIDE){
         background(255);
         SHOW_CLUE = false;
     }
     COLOR = pick_color();
+}
+
+function mouseReleased() {
+    PEN = true;
 }
 
 function windowResized() {
