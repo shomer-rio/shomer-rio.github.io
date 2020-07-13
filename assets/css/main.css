@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
 
@@ -2240,6 +2241,7 @@
 	#chanichimot-he {
 		color: #111111;
 		font-size: 5em;
+		font-family: 'Atma', cursive;
 		/* width: 100%;
 		height: 100%; */
 		position: absolute;
