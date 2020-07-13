@@ -77,11 +77,11 @@ function draw() {
 }
 
 function mousePressed() {
-    let INSIDE = inside();
-    if (!INSIDE) {
+    if (!inside()) {
         PEN = false;
+        return
     }
-    if (SHOW_CLUE && INSIDE){
+    if (SHOW_CLUE){
         background(255);
         SHOW_CLUE = false;
     }
