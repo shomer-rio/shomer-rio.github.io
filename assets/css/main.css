@@ -3063,6 +3063,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
+				background-image: url('../images/banner_small.jpg');
 				padding: 8em 1.5em 6em 1.5em;
 			}
 
@@ -3079,6 +3080,7 @@
 		@media screen and (max-width: 480px) {
 
 			#banner {
+				background-image: url('../images/banner_small.jpg');
 				padding: 6em 1.5em 4em 1.5em;
 			}
 
