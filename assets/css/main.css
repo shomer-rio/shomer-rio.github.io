@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url(font-awesome.min.css);
+@import 'https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css';
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
 
 /*
@@ -1593,7 +1594,7 @@
 
 	body, input, select, textarea {
 		color: #444444;
-		font-family: "Raleway", Arial, Helvetica, sans-serif;
+		font-family: 'rawline', Arial, Helvetica, sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.65;
