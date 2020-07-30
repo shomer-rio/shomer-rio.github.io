@@ -1641,7 +1641,7 @@
 		}
 
 	a {
-		color: #5385c1;
+		color: #011374;
 		text-decoration: underline;
 	}
 
@@ -1663,7 +1663,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #5385c1;
+		color: #011374;
 		font-weight: bolder;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -1845,7 +1845,7 @@
 		}
 
 		section.wrapper.style1, article.wrapper.style1 {
-			background: #5385c1;
+			background: #011374;
 			color: #bacee6;
 		}
 
@@ -2068,8 +2068,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #5385c1;
-			box-shadow: 0 0 0 1px #5385c1;
+			border-color: #011374;
+			box-shadow: 0 0 0 1px #011374;
 		}
 
 	.select-wrapper {
@@ -2179,8 +2179,8 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #5385c1;
-			box-shadow: 0 0 0 1px #5385c1;
+			border-color: #011374;
+			box-shadow: 0 0 0 1px #011374;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2739,7 +2739,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #5385c1;
+			background-color: #011374;
 			color: #ffffff !important;
 		}
 
@@ -2795,7 +2795,7 @@
 	}
 
 		.subpage #header {
-			background: #5385c1;
+			background: #011374;
 			top: 0;
 			height: 44px;
 			line-height: 44px;
@@ -2934,7 +2934,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		background: #5385c1;
+		background: #011374;
 		color: #d4e0ef;
 		height: 100%;
 		max-width: 80%;
@@ -3019,7 +3019,7 @@
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
-		/* border-top: 0.5em solid #5385c1; */
+		/* border-top: 0.5em solid #011374; */
 	}
 
 		#banner h1 {
