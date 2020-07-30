@@ -1898,7 +1898,7 @@
 		}
 
 	header p {
-		color: #bbb;
+		color: #989898;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -2192,27 +2192,27 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: #bbb !important;
+		color: #989898 !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #bbb !important;
+		color: #989898 !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #bbb !important;
+		color: #989898 !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #bbb !important;
+		color: #989898 !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: #bbb !important;
+		color: #989898 !important;
 		opacity: 1.0;
 	}
 
@@ -2731,7 +2731,7 @@
 			input[type="button"].alt.icon:before,
 			button.alt.icon:before,
 			.button.alt.icon:before {
-				color: #bbb;
+				color: #989898;
 			}
 
 		input[type="submit"].special,
@@ -3095,19 +3095,19 @@
 	}
 
 	#footer .copyright {
-		color: #bbb;
+		color: #989898;
 		font-size: 0.8em;
 		margin: 0 0 2em 0;
 		padding: 0;
 	}
 
 		#footer .copyright a {
-			color: #bbb;
+			color: #989898;
 			text-decoration: none;
 		}
 
 			#footer .copyright a:hover {
-				color: #bbb;
+				color: #989898;
 				text-decoration: underline;
 			}
 
