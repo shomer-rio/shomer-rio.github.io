@@ -5,7 +5,22 @@
 @import url(font-awesome.min.css);
 @import 'https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css';
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
-
+@font-face{
+	font-family:'Comix';
+	src:url('../fonts/comix/ComixNo2CLM-Medium.ttf') format('truetype')
+}
+@font-face{
+	font-family:'Comix-bold';
+	src:url('../fonts/comix/ComixNo2CLM-Bold.ttf') format('truetype')
+}
+@font-face{
+	font-family:'FredokaOne';
+	src:url('../fonts/FredokaOne/fonts/ttf/FredokaOne-Regular.ttf') format('truetype')
+}
+@font-face{
+	font-family:'GanCLM';
+	src:url('../fonts/GanCLM/gan/GanCLM-Bold.ttf') format('truetype')
+}
 /*
 	Theory by TEMPLATED
 	templated.co @templatedco
@@ -2243,7 +2258,7 @@
 	#chanichimot-he {
 		color: #111111;
 		font-size: 5em;
-		font-family: 'Amatic SC';
+		font-family: 'Comix';
 		/* width: 100%;
 		height: 100%; */
 		position: absolute;
