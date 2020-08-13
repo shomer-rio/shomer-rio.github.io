@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 	</head>
-	<body class="subpage">
+	<body class="subpage" style="font-family: 'Comic Neue', cursive;">
 
 		<!-- Header -->
         <header id="header">
@@ -26,7 +26,15 @@
                     <p> Hashomer Hatzair Rio </p>
                 </header>
             </div>
-        </section>
+		</section>
+		
+		<section id="two" class="wrapper">
+			<div class="inner">
+				<header class="align-center">
+					<h2 id="building">Em Construção<phantomtext>...</phantomtext></h2>
+				</header>
+			</div>
+		</section>
 
 		<!-- Footer -->
 		<footer id="footer">
@@ -52,5 +60,34 @@
 		<script src="../assets/js/skel.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
+
+		<style>
+			phantomtext {
+				color: rgba(0, 0, 0, 0);
+			}
+		</style>
+
+		<script type="text/javascript">
+		var dots = 0;
+		var base = "Em Construção";
+		var elem = document.getElementById("building");
+
+		setInterval(function(){
+			let innerHtml = base;
+			
+			if (++dots == 4) dots = 0;
+			
+			let i = 0;
+
+			while (i++ < dots) {
+				innerHtml = innerHtml + '.';
+			}
+			while (i++ < 4) {
+				innerHtml = innerHtml + '<phantomtext>.</phantomtext>';
+			}
+
+			elem.innerHTML = innerHtml;
+		}, 1000);
+		</script>
 	</body>
 </html>
