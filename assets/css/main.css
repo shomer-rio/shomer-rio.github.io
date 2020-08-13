@@ -1656,7 +1656,7 @@
 		}
 
 	a {
-		color: #011374;
+		color: #004aad;
 		text-decoration: underline;
 	}
 
@@ -1678,7 +1678,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #011374;
+		color: #004aad;
 		font-weight: bolder;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -1860,7 +1860,7 @@
 		}
 
 		section.wrapper.style1, article.wrapper.style1 {
-			background: #011374;
+			background: #004aad;
 			color: #bacee6;
 		}
 
@@ -2083,8 +2083,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #011374;
-			box-shadow: 0 0 0 1px #011374;
+			border-color: #004aad;
+			box-shadow: 0 0 0 1px #004aad;
 		}
 
 	.select-wrapper {
@@ -2194,8 +2194,8 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #011374;
-			box-shadow: 0 0 0 1px #011374;
+			border-color: #004aad;
+			box-shadow: 0 0 0 1px #004aad;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2234,7 +2234,7 @@
 /* Box */
 	#chanichimot {
 		border: none;
-		font-size: 5em;
+		font-size: 7em;
 		margin-bottom: 0em;
 		padding: 0em;
 		height: 400px;
@@ -2284,6 +2284,21 @@
 			-1px -1px 0 #fff,
 			1px -1px 0 #fff,
 			-1px 1px 0 #fff;
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		#chanichimot {
+			font-size: 7em;
+		}
+
+		#chanichimot-pt {
+			left: 5%;
+		}
+
+		#chanichimot-he {
+			right: 5%;
+		}
 	}
 
 
@@ -2818,7 +2833,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #011374;
+			background-color: #004aad;
 			color: #ffffff !important;
 		}
 
@@ -2874,7 +2889,7 @@
 	}
 
 		.subpage #header {
-			background: #011374;
+			background: #004aad;
 			top: 0;
 			height: 44px;
 			line-height: 44px;
@@ -2911,6 +2926,11 @@
 			position: absolute;
 			top: 0;
 			font-size: 1.5em;
+		}
+
+		#header a.logo img {
+			height: 70px;
+			width: 70px;
 		}
 
 		#header a {
@@ -3013,7 +3033,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		background: #011374;
+		background: #004aad;
 		color: #d4e0ef;
 		height: 100%;
 		max-width: 80%;
@@ -3098,7 +3118,7 @@
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
-		/* border-top: 0.5em solid #011374; */
+		/* border-top: 0.5em solid #004aad; */
 	}
 
 		#banner h1 {
