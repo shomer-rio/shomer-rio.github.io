@@ -2234,6 +2234,7 @@
 /* Box */
 	#chanichimot {
 		border: none;
+		font-size: 5em;
 		margin-bottom: 0em;
 		padding: 0em;
 		height: 400px;
@@ -2242,7 +2243,6 @@
 
 	#chanichimot-pt {
 		color: #111111;
-		font-size: 5em;
 		font-weight: bold;
 		font-family: 'Comic Neue', cursive;
 		/* width: 100%;
@@ -2253,11 +2253,19 @@
 		z-index: 10;
 		text-decoration: none;
 		user-select: none;
+		text-shadow:
+			2px 0 0 #fff,
+			-2px 0 0 #fff,
+			0 2px 0 #fff,
+			0 -2px 0 #fff,
+			1px 1px #fff,
+			-1px -1px 0 #fff,
+			1px -1px 0 #fff,
+			-1px 1px 0 #fff;
 	}
 
 	#chanichimot-he {
 		color: #111111;
-		font-size: 5em;
 		font-family: 'Comix';
 		/* width: 100%;
 		height: 100%; */
@@ -2267,7 +2275,63 @@
 		z-index: 10;
 		text-decoration: none;
 		user-select: none;
+		text-shadow:
+			2px 0 0 #fff,
+			-2px 0 0 #fff,
+			0 2px 0 #fff,
+			0 -2px 0 #fff,
+			1px 1px #fff,
+			-1px -1px 0 #fff,
+			1px -1px 0 #fff,
+			-1px 1px 0 #fff;
 	}
+
+
+	@media screen and (max-width: 980px) {
+
+		#chanichimot {
+			font-size: 3em;
+		}
+
+		#chanichimot-pt {
+			left: 0;
+		}
+
+		#chanichimot-he {
+			right: 0;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#chanichimot {
+			font-size: 3em;
+		}
+
+		#chanichimot-pt {
+			left: 0;
+		}
+
+		#chanichimot-he {
+			right: 0;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#chanichimot {
+			font-size: 3em;
+		}
+
+		#chanichimot-pt {
+			left: 0;
+		}
+
+		#chanichimot-he {
+			right: 0;
+		}
+	}
+
 
 	.box {
 		border: solid 1px #dbdbdb;
