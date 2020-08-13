@@ -2875,23 +2875,28 @@
 /* Header */
 
 	.subpage {
-		padding-top: 44px;
+		padding-top: 5em;
 	}
 
 		.subpage #header {
-			background: #004aad;
+			background-image: url('../images/banner.jpg');
 			top: 0;
-			height: 44px;
-			line-height: 44px;
+			height: 6em;
+			line-height: 5em;
 			position: fixed;
+		}
+
+		.subpage #header a.logo img {
+			height: 3em;
+			width: 3em;
 		}
 
 	#header {
 		color: #d4e0ef;
 		cursor: default;
-		height: 3.25em;
+		height: 5em;
 		left: 0;
-		line-height: 3.25em;
+		line-height: 5em;
 		position: absolute;
 		text-align: right;
 		top: 2em;
@@ -2914,13 +2919,13 @@
 			margin: 0;
 			padding: 0;
 			position: absolute;
-			top: 0;
+			top: 10px;
 			font-size: 1.5em;
 		}
 
 		#header a.logo img {
-			height: 70px;
-			width: 70px;
+			height: 3.5em;
+			width: 3.5em;
 		}
 
 		#header a {
