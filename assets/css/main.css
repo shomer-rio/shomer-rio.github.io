@@ -2798,8 +2798,8 @@
 			.button.alt:hover {
 				font-weight: bold;
 				color: #fff !important;
-				box-shadow: inset 0 0 0 2px #4278b8;
-				background-color: #4278b8;
+				box-shadow: inset 0 0 0 2px #1874fe;
+				background-color: #1874fe;
 			}
 
 			input[type="submit"].alt:active,
@@ -2840,7 +2840,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #4278b8;
+				background-color: #1874fe;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
