@@ -22,5 +22,6 @@ body {
 
 #banner {
     display: inline-block;
-    font-family: 'FredokaOne';
+	font-family: 'FredokaOne';
+	font-size: 3.5em;
 }
