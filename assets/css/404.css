@@ -1,0 +1,21 @@
+@font-face{
+	font-family:'Comix';
+	src:url('../fonts/comix/ComixNo2CLM-Medium.ttf') format('truetype')
+}
+@font-face{
+	font-family:'Comix-bold';
+	src:url('../fonts/comix/ComixNo2CLM-Bold.ttf') format('truetype')
+}
+@font-face{
+	font-family:'FredokaOne';
+	src:url('../fonts/FredokaOne/fonts/ttf/FredokaOne-Regular.ttf') format('truetype')
+}
+@font-face{
+	font-family:'GanCLM';
+	src:url('../fonts/GanCLM/gan/GanCLM-Bold.ttf') format('truetype')
+}
+
+#banner {
+    text-align: center;
+    font-family: 'GanCLM';
+}
