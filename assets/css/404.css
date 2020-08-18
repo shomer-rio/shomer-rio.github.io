@@ -15,7 +15,12 @@
 	src:url('../fonts/GanCLM/gan/GanCLM-Bold.ttf') format('truetype')
 }
 
-#banner {
+body {
+    width: 100%;
     text-align: center;
+}
+
+#banner {
+    display: inline-block;
     font-family: 'GanCLM';
 }
