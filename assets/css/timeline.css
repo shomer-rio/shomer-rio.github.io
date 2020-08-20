@@ -17,7 +17,7 @@
 	 font-family: 'Pathway Gothic One', sans-serif;
 	 color: #fff;
 }
- .timeline__content-desc {
+ .timeline p {
 	 margin: 0;
 	 font-size: 15px;
 	 box-sizing: border-box;
@@ -88,7 +88,7 @@
 	 transition: 0.3s all 0.2s;
 	 opacity: 1;
 }
- .event--active .timeline__content-title {
+ .event--active .timeline h2 {
 	 margin: -50px 0 20px 0;
 }
  @media only screen and (max-width: 767px) {
@@ -109,11 +109,12 @@
 		 padding-bottom: 40px;
 	}
 }
- .timeline__img {
+ .timeline img {
 	 max-width: 100%;
 	 box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
 }
- .timeline-container {
+
+#timeline {
 	 width: 100%;
 	 position: relative;
 	 padding: 80px 0;
@@ -121,7 +122,7 @@
 	 background-attachment: fixed;
 	 background-size: cover;
 }
- .timeline-container:before {
+#timeline:before {
 	 position: absolute;
 	 left: 0;
 	 top: 0;
@@ -130,20 +131,20 @@
 	 background: rgba(99, 99, 99, 0.8);
 	 content: "";
 }
- .timeline-header {
+#timeline header {
 	 width: 100%;
 	 text-align: center;
 	 margin-bottom: 80px;
 	 position: relative;
 }
- .timeline-header__title {
+#timeline header h2 {
 	 color: #fff;
 	 font-size: 46px;
 	 font-family: Cardo;
 	 font-weight: normal;
 	 margin: 0;
 }
- .timeline-header__subtitle {
+#timeline header h3 {
 	 color: rgba(255, 255, 255, .5);
 	 font-family: 'Pathway Gothic One', sans-serif;
 	 font-size: 16px;

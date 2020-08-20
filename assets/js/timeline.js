@@ -29,8 +29,8 @@ $.fn.timeline = function () {
 				selectors.id.css("background-image",`url(${selectors.item.last().find(selectors.img).attr("src")})`);
 				selectors.item.last().addClass(selectors.activeClass);
 		  	} else if (pos <= max - 40 && pos >= min) {
-				selectors.id.css("background-image", `url(${$(this).find(selectors.img).attr("src")})`);
 				selectors.item.removeClass(selectors.activeClass);
+				selectors.id.css("background-image", `url(${$(this).find(selectors.img).attr("src")})`);
 				$(this).addClass(selectors.activeClass);
 		  	}
 		});
