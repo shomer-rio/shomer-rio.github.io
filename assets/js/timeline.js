@@ -46,9 +46,8 @@ function buildTimeline(filePath) {
 			let json = array[i];
 
 			events += `
-			<div class="event" data-text="${json["title"]}">
+			<div class="event" data-text="${json["title"]}"><img src="${json["img"]}"/>
 				<h2>${json["date"]}</h2>
-				<img src="${json["img"]}">
 				<p>${json["text"]}</p>
 			</div>
 			`
