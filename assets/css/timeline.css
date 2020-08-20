@@ -54,17 +54,17 @@
  .timeline-item:before {
 	 content: attr(data-text);
 	 letter-spacing: 3px;
-	 width: 100%;
+	 width: 150%;
 	 position: absolute;
 	 color: rgba(255, 255, 255, .5);
-	 font-size: 13px;
+	 font-size: 1.4em;
 	 font-family: 'Pathway Gothic One', sans-serif;
 	 border-left: 2px solid rgba(255, 255, 255, .5);
 	 top: 70%;
 	 margin-top: -5px;
 	 padding-left: 15px;
 	 opacity: 0;
-	 right: calc(-100% - 56px);
+	 right: calc(-150% - 56px);
 }
  .timeline-item:nth-child(even) {
 	 align-self: flex-end;
@@ -72,7 +72,7 @@
  .timeline-item:nth-child(even):before {
 	 right: auto;
 	 text-align: right;
-	 left: calc(-100% - 56px);
+	 left: calc(-150% - 56px);
 	 padding-left: 0;
 	 border-left: none;
 	 border-right: 2px solid rgba(255, 255, 255, .5);
