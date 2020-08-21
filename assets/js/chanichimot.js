@@ -1,36 +1,46 @@
 var PEN = true;
 var SHOW_CLUE = true;
-var COLORS = [
-    //'red'
-    [255, 0, 0],
-    // 'orange'
-    [255, 127, 0],
-    // 'yellow'
-    [255, 255, 0],
-    // 'green'
-    [0, 255, 0],
-    // 'blue'
-    [0, 0, 255],
-    // 'indigo'
-    [46, 43, 95],
-    // 'violet'
-    [139, 0, 255]
-    ];
-var COLOR = [0,0,0] // black
-var color_step = ~~(Math.random() * COLORS.length);
 
-var step = 0;
+var color_step = 0;
+var color_stop = 100;
+
+var magen_step = 0;
 
 let symmetry = 6;
 let angle = 360 / symmetry;
 
 let stroke_weight = 4;
 
+function hsv_to_rgb(h, s=1.0, v=1.0) {
+    var r, g, b, i, f, p, q, t;
+    if (arguments.length === 1) {
+        s = h.s, v = h.v, h = h.h;
+    }
+    i = Math.floor(h * 6);
+    f = h * 6 - i;
+    p = v * (1 - s);
+    q = v * (1 - f * s);
+    t = v * (1 - (1 - f) * s);
+    switch (i % 6) {
+        case 0: r = v, g = t, b = p; break;
+        case 1: r = q, g = v, b = p; break;
+        case 2: r = p, g = v, b = t; break;
+        case 3: r = p, g = q, b = v; break;
+        case 4: r = t, g = p, b = v; break;
+        case 5: r = v, g = p, b = q; break;
+    }
+    return [
+        ~~Math.round(r * 255),
+        ~~Math.round(g * 255),
+        ~~Math.round(b * 255)
+    ];
+}
+
 function setup() {
     var canvas_div = document.getElementById('chanichimot');
     var width = canvas_div.offsetWidth;
     var height = canvas_div.offsetHeight;
-    var canvas = createCanvas(width, height);
+    var canvas = createCanvas(width, height);   
 
     canvas.parent("chanichimot");
     angleMode(DEGREES);
@@ -40,8 +50,8 @@ function inside(){
     return (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height);
 }
 
-function pick_color(){
-    return COLORS[(color_step++) % COLORS.length]
+function pick_color(i, n){
+    return hsv_to_rgb((i % n) / n, 1, 1);
 }
 
 function draw() {
@@ -51,7 +61,7 @@ function draw() {
     translate(width / 2, height / 2);
 
     if (SHOW_CLUE && !(frameCount % 4)){
-        magen_david(step++, 20);
+        magen_david(magen_step++, 20);
         return;
     }
     /* Verifica se o mouse está dentro da área de desenho */
@@ -63,6 +73,7 @@ function draw() {
             let pmx = pmouseX - width / 2;
             let pmy = pmouseY - height / 2;
             strokeWeight(stroke_weight);
+            COLOR = pick_color(color_step++, color_stop)
             stroke(COLOR[0], COLOR[1], COLOR[2]);
             for (let i = 0; i < symmetry; i++) {
                 rotate(angle);                
@@ -85,7 +96,6 @@ function mousePressed() {
         background(255);
         SHOW_CLUE = false;
     }
-    COLOR = pick_color();
 }
 
 function mouseReleased() {
