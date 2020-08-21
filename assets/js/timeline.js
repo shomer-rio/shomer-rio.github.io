@@ -18,8 +18,6 @@
         min = $(this).offset().top;
         max = $(this).height() + min;
 
-        console.log('i = ', i, 'min = ', min, 'max = ', max, 'pos = ', pos);
-
         if (i == itemLength - 2 && pos > ((min + max) / 2)) {
           selectors.item.removeClass(selectors.activeClass);
           selectors.id.css("background-image", `url("${selectors.item.last().find(selectors.img).attr("src")}")"`);
