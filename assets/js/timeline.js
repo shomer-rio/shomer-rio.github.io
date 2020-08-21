@@ -25,7 +25,7 @@
           selectors.id.css("background-image", `url("${selectors.item.last().find(selectors.img).attr("src")}")"`);
           selectors.item.last().addClass(selectors.activeClass);
 
-        } else if (min <= pos && pos <= max - 40) {
+        } else if (min <= pos && pos <= max) {
           selectors.id.css("background-image", `url("${$(this).find(selectors.img).attr("src")}")"`);
           selectors.item.removeClass(selectors.activeClass);
           $(this).addClass(selectors.activeClass);
