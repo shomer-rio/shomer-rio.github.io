@@ -1,17 +1,23 @@
 /* Color Scheme 
 **
 ** Common Blue
-** #004aad
-** #1874fe
-** #38b6ff
-** #35ffff
-**
-** Pastel
-** #96bebd
-** #c3d3c8
-** #f0e8d2
-** #ffefd6
-**
-** Black
-** #000000
 */
+color {
+    color: #004aad;
+    color: #1874fe;
+    color: #38b6ff;
+    color: #35ffff;
+}
+/* Pastel
+*/
+color {
+    color: #96bebd;
+    color: #c3d3c8;
+    color: #f0e8d2;
+    color: #ffefd6;
+}
+/* Black
+*/
+color {
+    color: #000000;
+}

@@ -1,36 +1,56 @@
+function centerDistance( jQElement ) {
+	return Math.abs((jQElement.offset().top - $(window).scrollTop() + jQElement.height() / 2) - $(window).height() / 2);
+}
+
+function setActive( index ) {
+	if (active !== undefined) {
+		let element = selectors.items.eq( active );
+		element.removeClass(selectors.activeClass);
+	} 
+	var active = index;
+	let element = selectors.items.eq( active );
+	element.addClass(selectors.addClass);
+	let img_src = element.find(selectors.img).attr("src");
+	selectors.item.css("backgroud-image", `url("${img_src}")`);
+}
+
+function updateTimeline () {
+	var closest = {
+		index: null,
+		distance: Infinity
+	};
+
+	selectors.items.each( function ( i ) {
+		let element = $( selectors.items.eq( i ) );
+		let distance = centerDistance( element );
+
+		if (distance < closest.distance) {
+			closest.index = i;
+			closest.distance = distance;
+		}
+	});
+
+	if (closest.index !== null) {
+		setActive( closest.index );
+	}
+}
+
+function timeline() {
+	var selectors = {
+		item: $(this),
+		items: $(this).find(".timeline-item"),
+		activeClass: "timeline-item--active",
+		img: ".timeline__img"
+	};
+
+	var active = 0;
+	setActive( active );
+
+	$(window).scroll( updateTimeline );
+}
+
 (function($) {
-  $.fn.timeline = function() {
-    var selectors = {
-      id: $(this),
-      item: $(this).find(".timeline-item"),
-      activeClass: "timeline-item--active",
-      img: ".timeline__img"
-    };
-
-    selectors.item.eq(0).addClass(selectors.activeClass);
-    selectors.id.css("background-image", `url("${selectors.item.first().find(selectors.img).attr("src")}")`);
-    
-    var itemLength = selectors.item.length;
-    $(window).scroll(function() {
-      var max, min;
-      var pos = $(this).scrollTop();
-      selectors.item.each(function( i ) {
-        min = $(this).offset().top;
-        max = $(this).height() + min;
-
-        if (i == itemLength - 2 && pos > ((min + max) / 2)) {
-          selectors.item.removeClass(selectors.activeClass);
-          selectors.id.css("background-image", `url("${selectors.item.last().find(selectors.img).attr("src")}")`);
-          selectors.item.last().addClass(selectors.activeClass);
-
-        } else if (min <= pos - 50 && pos + 50 <= max) {
-          selectors.id.css("background-image", `url("${$(this).find(selectors.img).attr("src")}")`);
-          selectors.item.removeClass(selectors.activeClass);
-          $(this).addClass(selectors.activeClass);
-        }
-      });
-    });
-  };
+  $.fn.timeline = timeline;
 })(jQuery);
 
 function buildTimeline(filePath) {
