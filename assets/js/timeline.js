@@ -2,7 +2,7 @@ function centerDistance( jQElement ) {
 	return Math.abs((jQElement.offset().top - $(window).scrollTop() + jQElement.height() / 2) - $(window).height() / 2);
 }
 
-function setActive( index ) {
+function setActive( selectors, index ) {
 	if (active !== undefined) {
 		let element = selectors.items.eq( active );
 		element.removeClass(selectors.activeClass);
@@ -14,43 +14,39 @@ function setActive( index ) {
 	selectors.item.css("backgroud-image", `url("${img_src}")`);
 }
 
-function updateTimeline () {
-	var closest = {
-		index: null,
-		distance: Infinity
-	};
-
-	selectors.items.each( function ( i ) {
-		let element = $( selectors.items.eq( i ) );
-		let distance = centerDistance( element );
-
-		if (distance < closest.distance) {
-			closest.index = i;
-			closest.distance = distance;
-		}
-	});
-
-	if (closest.index !== null) {
-		setActive( closest.index );
-	}
-}
-
-function timeline() {
-	var selectors = {
-		item: $(this),
-		items: $(this).find(".timeline-item"),
-		activeClass: "timeline-item--active",
-		img: ".timeline__img"
-	};
-
-	var active = 0;
-	setActive( active );
-
-	$(window).scroll( updateTimeline );
-}
-
 (function($) {
-  $.fn.timeline = timeline;
+  	$.fn.timeline = function () {
+		var selectors = {
+			item: $(this),
+			items: $(this).find(".timeline-item"),
+			activeClass: "timeline-item--active",
+			img: ".timeline__img"
+		};
+
+		var active = 0;
+		setActive( active );
+
+		$(window).scroll( function () {
+			var closest = {
+				index: null,
+				distance: Infinity
+			};
+		
+			selectors.items.each( function ( i ) {
+				let element = $( selectors.items.eq( i ) );
+				let distance = centerDistance( element );
+		
+				if (distance < closest.distance) {
+					closest.index = i;
+					closest.distance = distance;
+				}
+			});
+		
+			if (closest.index !== null) {
+				setActive( selectors, closest.index );
+			}
+		});
+	}
 })(jQuery);
 
 function buildTimeline(filePath) {
