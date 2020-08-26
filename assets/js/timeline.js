@@ -46,7 +46,7 @@ function centerDistance( jQElement ) {
 				let img_src = element.find(selectors.img).attr("src");
 				selectors.item.css("backgroud-image", `url("${img_src}")`);
 
-				console.log('setting image');
+				console.log('setting image @', element);
 			}
 		});
 	}
