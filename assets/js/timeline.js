@@ -2,18 +2,6 @@ function centerDistance( jQElement ) {
 	return Math.abs((jQElement.offset().top - $(window).scrollTop() + jQElement.height() / 2) - $(window).height() / 2);
 }
 
-function setActive( selectors, index ) {
-	if (active !== undefined) {
-		let element = selectors.items.eq( active );
-		element.removeClass(selectors.activeClass);
-	} 
-	var active = index;
-	let element = selectors.items.eq( active );
-	element.addClass(selectors.addClass);
-	let img_src = element.find(selectors.img).attr("src");
-	selectors.item.css("backgroud-image", `url("${img_src}")`);
-}
-
 (function($) {
   	$.fn.timeline = function () {
 		var selectors = {
@@ -43,7 +31,15 @@ function setActive( selectors, index ) {
 			});
 		
 			if (closest.index !== null) {
-				setActive( selectors, closest.index );
+				if (active !== undefined) {
+					let element = selectors.items.eq( active );
+					element.removeClass(selectors.activeClass);
+				} 
+				active = closest.index;
+				let element = selectors.items.eq( active );
+				element.addClass(selectors.addClass);
+				let img_src = element.find(selectors.img).attr("src");
+				selectors.item.css("backgroud-image", `url("${img_src}")`);
 			}
 		});
 	}
