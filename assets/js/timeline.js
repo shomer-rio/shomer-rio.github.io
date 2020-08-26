@@ -23,6 +23,8 @@ function centerDistance( jQElement ) {
 				distance: Infinity
 			};
 		
+			console.log('scrolling');
+
 			selectors.items.each( function ( i ) {
 				let element = $( selectors.items.eq( i ) );
 				let distance = centerDistance( element );
@@ -43,6 +45,8 @@ function centerDistance( jQElement ) {
 				element.addClass(selectors.addClass);
 				let img_src = element.find(selectors.img).attr("src");
 				selectors.item.css("backgroud-image", `url("${img_src}")`);
+
+				console.log('setting image');
 			}
 		});
 	}
