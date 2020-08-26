@@ -23,7 +23,7 @@
           selectors.id.css("background-image", `url("${selectors.item.last().find(selectors.img).attr("src")}")"`);
           selectors.item.last().addClass(selectors.activeClass);
 
-        } else if (min <= pos - 50 && pos <= max) {
+        } else if (min <= pos - 50 && pos + 50 <= max) {
           selectors.id.css("background-image", `url("${$(this).find(selectors.img).attr("src")}")"`);
           selectors.item.removeClass(selectors.activeClass);
           $(this).addClass(selectors.activeClass);
