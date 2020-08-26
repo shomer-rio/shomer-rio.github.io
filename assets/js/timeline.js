@@ -43,7 +43,7 @@ function buildTimeline(filePath) {
 
     events += `
     <div class="timeline-item" data-text="${json["title"]}">
-      <div class="timeline__content"><img class="timeline__img" src="${json["img"]}"/>
+      <div class="timeline__content"><img class="timeline__img" src="${json["img"]}" onerror="this.img='https://shomer-rio.github.io/assets/images/CYNA.jpg'"/>
         <h2 class="timeline__content-title">${json["date"]}</h2>
         <p class="timeline__content-desc">${json["text"]}</p>
       </div>
