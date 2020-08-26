@@ -15,7 +15,7 @@ function centerDistance( jQElement ) {
 		let element = selectors.items.eq( active );
 		element.addClass(selectors.activeClass);
 		let img_src = element.find(selectors.img).attr("src");
-		selectors.item.css("backgroud-image", `url("${img_src}")`);
+		selectors.item.css("background-image", `url("${img_src}")`);
 
 		$(window).scroll( function () {
 			var closest = {
@@ -42,7 +42,7 @@ function centerDistance( jQElement ) {
 				let element = selectors.items.eq( active );
 				element.addClass(selectors.activeClass);
 				let img_src = element.find(selectors.img).attr("src");
-				selectors.item.css("backgroud-image", `url("${img_src}")`);
+				selectors.item.css("background-image", `url("${img_src}")`);
 			}
 		});
 	}
