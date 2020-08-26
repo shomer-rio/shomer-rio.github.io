@@ -2236,6 +2236,7 @@
 		border: none;
 		font-size: 7em;
 		margin-bottom: 0em;
+		touch-action: none;
 		padding: 0em;
 		height: 400px;
 		width: inherit;
