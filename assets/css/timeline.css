@@ -33,7 +33,7 @@
 	 height: 100%;
 	 margin-left: -1px;
 	 content: "";
-	 background: rgba(0, 74, 173, .4);
+	 background: rgba(0, 74, 173, .3);
 }
  @media only screen and (max-width: 767px) {
 	 .timeline:before {
@@ -127,7 +127,7 @@
 	 top: 0;
 	 width: 100%;
 	 height: 100%;
-	 background: rgba(0, 74, 173, .4);
+	 background: rgba(240, 232, 210, 0.8);
 	 content: "";
 }
  .timeline-header {
