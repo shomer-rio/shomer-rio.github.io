@@ -20,10 +20,14 @@ body, html {
 	width: 80%;
 	padding: 20px;
 	text-align: center;
-	font-family: 'Serif';
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 2.5em;
   }
 
   .text p, .text a {
 	font-size: 1.5em;
+  }
+
+  .text a {
+	text-decoration: none;
   }
