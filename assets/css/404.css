@@ -1,49 +1,16 @@
-@font-face{
-	font-family:'Comix';
-	src:url('../fonts/comix/ComixNo2CLM-Medium.ttf') format('truetype')
-}
-@font-face{
-	font-family:'Comix-bold';
-	src:url('../fonts/comix/ComixNo2CLM-Bold.ttf') format('truetype')
-}
-@font-face{
-	font-family:'FredokaOne';
-	src:url('../fonts/FredokaOne/fonts/ttf/FredokaOne-Regular.ttf') format('truetype')
-}
-@font-face{
-	font-family:'GanCLM';
-	src:url('../fonts/GanCLM/gan/GanCLM-Bold.ttf') format('truetype')
-}
-
 body, html {
 	height: 100%;
 	overflow: hidden;
+	background-color: gray;
   }
   
   * {
 	box-sizing: border-box;
   }
   
-  .bg-image {
-	/* The image used */
-	background-image: url('https://shomer-rio.github.io/assets/images/banner.jpg');
-  
-	/* Add the blur effect */
-	filter: blur(3px);
-	-webkit-filter: blur(3px);
-  
-	/* Full height */
-	height: 100%;
-  
-	/* Center and scale the image nicely */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-  }
-  
   /* Position text in the middle of the page/image */
-  .bg-text {
-	color: white;
+  .text {
+	color: black;
 	font-weight: bold;
 	position: absolute;
 	top: 50%;
@@ -53,10 +20,10 @@ body, html {
 	width: 80%;
 	padding: 20px;
 	text-align: center;
-	font-family: 'GanCLM';
+	font-family: 'Serif';
 	font-size: 2.5em;
   }
 
-  .bg-text p, .bg-text a {
+  .text p, .text a {
 	font-size: 1.5em;
   }
