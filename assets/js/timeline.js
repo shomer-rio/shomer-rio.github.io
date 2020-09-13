@@ -1,5 +1,17 @@
 function centerDistance( jQElement ) {
-	return Math.abs((jQElement.offset().top - $(window).scrollTop() + jQElement.height() / 2) - $(window).height() / 2);
+	return (jQElement.offset().top - $(window).scrollTop() + jQElement.height() / 2) - $(window).height() / 2;
+}
+
+function inside( jQElement ) {
+	return ( Math.abs(centerDistance( jQElement )) <= jQElement.height() / 2 )
+}
+
+function above( jQElement ) {
+	return ( !inside( jQElement ) ) && ( centerDistance( jQElement ) < 0 );
+}
+
+function below( jQElement ) {
+	return ( !inside( jQElement ) ) && ( centerDistance( jQElement ) > 0 );
 }
 
 (function($) {
@@ -14,34 +26,36 @@ function centerDistance( jQElement ) {
 		var active = 0;
 		let element = selectors.items.eq( active );
 		element.addClass(selectors.activeClass);
+
 		let img_src = element.find(selectors.img).attr("src");
 		selectors.item.css("background-image", `url("${img_src}")`);
 
 		$(window).scroll( function () {
-			var closest = {
-				index: null,
-				distance: Infinity
-			};
 
-			selectors.items.each( function ( i ) {
-				let element = $( selectors.items.eq( i ) );
-				let distance = centerDistance( element );
-		
-				if (distance < closest.distance) {
-					closest.index = i;
-					closest.distance = distance;
-				}
-			});
-		
-			if (closest.index !== null) {
+			let active_element = $( selectors.items.eq( active ) );
+			
+			if ( inside( active_element ) ) {
+				return
+			} else {
+
+				let n = selectors.items.length;
+
 				if (active !== undefined) {
 					let element = selectors.items.eq( active );
 					element.removeClass(selectors.activeClass);
 				} 
-				active = closest.index;
-				let element = selectors.items.eq( active );
-				element.addClass(selectors.activeClass);
-				let img_src = element.find(selectors.img).attr("src");
+
+				while ( active < n && below( active_element ) ){
+					active_element = $( selectors.items.eq( ++active ) );
+				}
+				
+				while ( active > 0 && above( active_element ) ){
+					active_element = $( selectors.items.eq( --active ) );
+				}
+
+				active_element.addClass(selectors.activeClass);
+
+				let img_src = active_element.find(selectors.img).attr("src");
 				selectors.item.css("background-image", `url("${img_src}")`);
 			}
 		});
