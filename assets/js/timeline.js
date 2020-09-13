@@ -45,7 +45,7 @@ function below( jQElement ) {
 					element.removeClass(selectors.activeClass);
 				} 
 
-				while ( active < n && above( active_element ) ){
+				while ( active < (n - 1) && above( active_element ) ){
 					active_element = $( selectors.items.eq( ++active ) );
 				}
 				
