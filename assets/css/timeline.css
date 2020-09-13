@@ -152,3 +152,29 @@
 	 font-weight: normal;
 }
  
+
+
+/* Mobile */
+.timeline-event {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.timeline-event-content {
+
+}
+
+h1.timeline-event-date {
+
+}
+
+h2.timeline-event-title {
+
+}
+
+p.timeline-event-text {
+
+}
+
+img.timeline-event-img {
+	
+}

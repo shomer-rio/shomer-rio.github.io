@@ -66,23 +66,24 @@ function buildMobileTimeline(filePath) {
 	document.title = "mobile";
 	$.getJSON(filePath, function (array) {
   
-	let events = ""
+	let events = []
   
 	for (let i=0; i<array.length; i++) {
 	  let json = array[i];
   
-	  events += `
-	  <div class="timeline-item" data-text="${json["title"]}">
-		<div class="timeline__content"><img class="timeline__img" src="${json["img"]}" onerror="this.img='https://shomer-rio.github.io/assets/images/CYNA.jpg'"/>
-		  <h2 class="timeline__content-title">${json["date"]}</h2>
-		  <p class="timeline__content-desc">${json["text"]}</p>
+	  events.push(`
+	  <div class="timeline-event">
+		<h2 class="timeline-event-title">${json["title"]}</h2>
+		<h1 class="timeline-event-date">${json["date"]}</h1>
+		<div class="timeline-event-content"><img class="timeline-event-img" src="${json["img"]}"/>
+		  <p class="timeline-event-text">${json["text"]}</p>
 		</div>
 	  </div>
-	  `
+	  `);
 	}
   
 	$(".timeline").html(`
-	  ${events}
+	  ${events.join('\n')}
 	`);
   });
 }
@@ -91,23 +92,23 @@ function buildDesktopTimeline(filePath) {
 	document.title = "desktop";
   $.getJSON(filePath, function (array) {
 
-  let events = ""
+  let events = [];
 
   for (let i=0; i<array.length; i++) {
     let json = array[i];
 
-    events += `
+    events.push(`
     <div class="timeline-item" data-text="${json["title"]}">
       <div class="timeline__content"><img class="timeline__img" src="${json["img"]}" onerror="this.img='https://shomer-rio.github.io/assets/images/CYNA.jpg'"/>
         <h2 class="timeline__content-title">${json["date"]}</h2>
         <p class="timeline__content-desc">${json["text"]}</p>
       </div>
     </div>
-    `
+    `);
   }
 
   $(".timeline").html(`
-    ${events}
+    ${events.join('\n')}
   `);
 
   $("#timeline").timeline();
