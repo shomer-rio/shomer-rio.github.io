@@ -63,7 +63,6 @@ function below( jQElement ) {
 })(jQuery);
 
 function buildMobileTimeline(filePath) {
-	document.title = "mobile";
 	$.getJSON(filePath, function (array) {
   
 	let events = []
@@ -75,8 +74,9 @@ function buildMobileTimeline(filePath) {
 	  <div class="timeline-event">
 		<h2 class="timeline-event-title">${json["title"]}</h2>
 		<h1 class="timeline-event-date">${json["date"]}</h1>
-		<div class="timeline-event-content"><img class="timeline-event-img" src="${json["img"]}"/>
-		  <p class="timeline-event-text">${json["text"]}</p>
+		<div class="timeline-event-content">
+			<img class="timeline-event-img" src="${json["img"]}"/>
+			<p class="timeline-event-text">${json["text"]}</p>
 		</div>
 	  </div>
 	  `);
@@ -89,7 +89,6 @@ function buildMobileTimeline(filePath) {
 }
 
 function buildDesktopTimeline(filePath) {
-	document.title = "desktop";
   $.getJSON(filePath, function (array) {
 
   let events = [];
