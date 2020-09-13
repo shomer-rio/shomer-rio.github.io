@@ -62,7 +62,33 @@ function below( jQElement ) {
 	}
 })(jQuery);
 
-function buildTimeline(filePath) {
+function buildMobileTimeline(filePath) {
+	document.title = "mobile";
+	$.getJSON(filePath, function (array) {
+  
+	let events = ""
+  
+	for (let i=0; i<array.length; i++) {
+	  let json = array[i];
+  
+	  events += `
+	  <div class="timeline-item" data-text="${json["title"]}">
+		<div class="timeline__content"><img class="timeline__img" src="${json["img"]}" onerror="this.img='https://shomer-rio.github.io/assets/images/CYNA.jpg'"/>
+		  <h2 class="timeline__content-title">${json["date"]}</h2>
+		  <p class="timeline__content-desc">${json["text"]}</p>
+		</div>
+	  </div>
+	  `
+	}
+  
+	$(".timeline").html(`
+	  ${events}
+	`);
+  });
+}
+
+function buildDesktopTimeline(filePath) {
+	document.title = "desktop";
   $.getJSON(filePath, function (array) {
 
   let events = ""
@@ -86,4 +112,12 @@ function buildTimeline(filePath) {
 
   $("#timeline").timeline();
   });
+}
+
+function buildTimeline( filePath ) {
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) { // if mobile
+		buildMobileTimeline( filePath )
+	} else { // Desktop
+		buildDesktopTimeline( filePath )
+	}
 }
