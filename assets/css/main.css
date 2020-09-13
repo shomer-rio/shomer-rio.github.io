@@ -1804,10 +1804,8 @@
 	}
 
 	.inner {
-		max-width: 45em;
+		max-width: 75em;
 		margin: 0 auto;
-		text-align: justify;
-		text-justify: auto;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -1821,6 +1819,29 @@
 		@media screen and (max-width: 480px) {
 
 			.inner {
+				max-width: 85%;
+			}
+
+		}
+	
+	.innertext {
+		max-width: 45em;
+		margin: 0 auto;
+		text-align: justify;
+		text-justify: auto;
+	}
+
+		@media screen and (max-width: 1280px) {
+
+			.innertext {
+				max-width: 90%;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.innertext {
 				max-width: 85%;
 			}
 
