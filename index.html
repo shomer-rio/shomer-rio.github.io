@@ -8,9 +8,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
-
-		<!-- p5.js -->
-		<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>		
+	
 		<!-- <script data-ad-client="ca-pub-7845681044158046" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 	</head>
 	<body>
@@ -70,7 +68,6 @@
 				<div id="chanichimot" class="box" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;">
 				<!-- Canvas -->
 				</div>
-				<script src="./assets/js/chanichimot.js"></script>
 
 				<a href="./chanichimot" draggable="false" id="chanichimot-pt">chanichim*ot!</a>
 				<a href="./chanichimot" draggable="false" id="chanichimot-he">חניכים*ות</a>
@@ -80,6 +77,8 @@
 		<!-- Footer -->
 		<footer id="footer">
 			<div class="inner">
+				<div id="contact" class="flex">
+				</div>
 				<div class="flex">
 					<div class="copyright">
 						Hashomer Hatzair Rio &copy; 2020
@@ -100,9 +99,17 @@
 		</footer>
 
 		<!-- Scripts -->
-		<script src="../assets/js/jquery.min.js"></script>
-		<script src="../assets/js/skel.min.js"></script>
-		<script src="../assets/js/util.js"></script>
-		<script src="../assets/js/main.js"></script>
+		<script src="./assets/js/jquery.min.js"></script>
+		<script src="./assets/js/skel.min.js"></script>
+		<script src="./assets/js/util.js"></script>
+		<script src="./assets/js/main.js"></script>
+		<script src="./assets/js/contact.js"></script>
+		<!-- p5.js -->
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>	
+		<script src="./assets/js/chanichimot.js"></script>
+
+		<script type="text/javascript">
+			buildContact("./assets/js/json/contact.json");
+		</script>
 	</body>
 </html>
