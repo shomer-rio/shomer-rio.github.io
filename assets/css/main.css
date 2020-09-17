@@ -3250,14 +3250,6 @@
 			font-size: 0.8em;
 		}
 
-		#contact i {
-			color: #444444;
-			display: block;
-			font-family: 'FontAwesome';
-			margin: 0 0 3pt 0;
-			font-size: 0.7em;
-		}
-
 		#contact a {
 			text-decoration: none;
 			color: #444444;
@@ -3267,12 +3259,14 @@
 			font-size: 0.7em;
 		}
 
-		#contact a ::before{
-			margin-left: 10pt;
-		}
-
 		#contact a:hover {
 			color: #555555;
+		}
+
+		#contact i {
+			color: #444444;
+			font-family: 'FontAwesome';
+			margin-right: 5pt;
 		}
 
 		#contact span {
