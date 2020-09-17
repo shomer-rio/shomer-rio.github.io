@@ -5,6 +5,7 @@
 @import url(font-awesome.min.css);
 @import 'https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css';
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display&display=swap');
 @font-face{
 	font-family:'Comix';
 	src:url('../fonts/comix/ComixNo2CLM-Medium.ttf') format('truetype')
