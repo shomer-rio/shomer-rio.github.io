@@ -3217,19 +3217,21 @@
 	}
 
 		#contact h1 {
+			display: block;
 			font-size: 1em;
 		}
 
 		#contact h2 {
+			display: block;
 			font-size: 0.8em;
 		}
 
 		#contact p {
-			
+			display: block;
 		}
 
 		#contact a {
-			
+			display: block;
 		}
 
 /* Footer */
