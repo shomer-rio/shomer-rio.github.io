@@ -3255,21 +3255,22 @@
 			color: #444444;
 			display: block;
 			font-family: 'FontAwesome';
-			margin: 0 0 3pt 0;
+			margin: 0 0 2pt 0;
 			font-size: 0.9em;
 		}
 
 		#contact a:hover {
-			color: #222222;
+			color: #111111;
 		}
 
 		#contact i {
-			color: #444444;
+			color: inherit;
 			font-family: 'FontAwesome';
 			margin-right: 5pt;
 		}
 
 		#contact span {
+			color: inherit;
 			font-family: 'rawline', Arial, Helvetica, sans-serif;
 		}
 
