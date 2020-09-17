@@ -1,4 +1,4 @@
-function buildPost( id ) {
+function buildPost( pageId ) {
     $('#fbpost').html(`
     <iframe
         scrolling="yes"
