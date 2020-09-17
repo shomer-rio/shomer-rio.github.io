@@ -3210,6 +3210,28 @@
 
 		}
 
+/* Contact */
+
+	#contact {
+		display: block;
+	}
+
+		#contact h1 {
+			font-size: 1em;
+		}
+
+		#contact h2 {
+			font-size: 0.8em;
+		}
+
+		#contact p {
+			
+		}
+
+		#contact a {
+			
+		}
+
 /* Footer */
 
 	#footer .inner {
