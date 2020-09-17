@@ -53,8 +53,8 @@ function inside(){
 function pick_color(i, n){
     return hsv_to_rgb(
         (i % n) / n, // color
-        0.5, // saturation (0.5 = pastel)
-        1.0  // lightness
+        0.7, // saturation (0.5 = pastel)
+        0.95  // lightness
         );
 }
 
