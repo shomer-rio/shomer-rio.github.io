@@ -3231,8 +3231,10 @@
 		}
 
 		#contact i {
+			color: #444444;
 			display: block;
 			font-family: 'FontAwesome';
+			font-size: 0.7em;
 		}
 
 		#contact i span {
@@ -3240,8 +3242,10 @@
 		}
 
 		#contact a {
+			color: #444444;
 			display: block;
 			font-family: 'FontAwesome';
+			font-size: 0.7em;
 		}
 
 		#contact a span {
