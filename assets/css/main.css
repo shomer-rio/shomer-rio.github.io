@@ -3265,13 +3265,16 @@
 			font-size: 0.7em;
 		}
 
+		#contact a ::before{
+			margin-left: 10pt;
+		}
+
 		#contact a:hover {
 			color: #555555;
 		}
 
 		#contact span {
 			font-family: 'rawline', Arial, Helvetica, sans-serif;
-			margin-right: 5pt;
 		}
 
 /* Footer */
