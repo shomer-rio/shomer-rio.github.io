@@ -160,21 +160,21 @@
 }
 
 .timeline-event-content {
-
+	display: block;
 }
 
 h1.timeline-event-date {
-
+	display: block;
 }
 
 h2.timeline-event-title {
-
+	display: block;
 }
 
 p.timeline-event-text {
-
+	display: block;
 }
 
 img.timeline-event-img {
-	
+	display: block;
 }
