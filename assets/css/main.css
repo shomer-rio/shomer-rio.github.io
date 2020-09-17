@@ -3230,6 +3230,7 @@
 
 	#contact {
 		font-family: 'rawline', Arial, Helvetica, sans-serif;
+		margin-bottom: 1em;
 		display: block;
 	}
 
@@ -3244,7 +3245,7 @@
 		#contact h2 {
 			display: block;
 			padding: 0;
-			margin: 0;
+			margin: 0 0 5pt 0;
 			font-size: 0.8em;
 		}
 
@@ -3253,10 +3254,6 @@
 			display: block;
 			font-family: 'FontAwesome';
 			font-size: 0.7em;
-		}
-
-		#contact i span {
-			font-family: 'rawline', Arial, Helvetica, sans-serif;
 		}
 
 		#contact a {
@@ -3271,8 +3268,9 @@
 			color: #555555;
 		}
 
-		#contact a span {
+		#contact span {
 			font-family: 'rawline', Arial, Helvetica, sans-serif;
+			margin-right: 5pt;
 		}
 
 /* Footer */
