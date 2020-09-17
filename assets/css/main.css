@@ -2373,13 +2373,20 @@
 		text-align: center;
 	}
 		.bannerspan h1 {
+			color: #555;
 			padding: 0;
 			margin: 0;
-			font-family: 'rawline', Arial, Helvetica, sans-serif;
-			font-size: 3em;
+			font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
+			font-size: 3.6em;
+		}
+
+		.bannerspan:hover h1 {
+			color: #004aad;
+			text-shadow: -0.2vmin 0.2vmin #222, 0.2vmin -0.2vmin #bbb;
 		}
 
 		.bannerspan h2 {
+			color: #444444;
 			font-family: 'rawline', Arial, Helvetica, sans-serif;
 			font-size: 2.5em;
 		}
