@@ -3239,7 +3239,7 @@
 			display: block;
 			padding: 0;
 			margin: 0;
-			font-size: 1em;
+			font-size: 1.3em;
 		}
 
 		#contact h2 {
@@ -3247,7 +3247,7 @@
 			display: block;
 			padding: 0;
 			margin: 0 0 5pt 0;
-			font-size: 0.8em;
+			font-size: 1.1em;
 		}
 
 		#contact a {
@@ -3256,11 +3256,11 @@
 			display: block;
 			font-family: 'FontAwesome';
 			margin: 0 0 3pt 0;
-			font-size: 0.7em;
+			font-size: 0.9em;
 		}
 
 		#contact a:hover {
-			color: #555555;
+			color: #222222;
 		}
 
 		#contact i {
