@@ -2366,6 +2366,22 @@
 		}
 	}
 
+	.bannerspan {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+		.bannerspan h1 {
+			padding: 0;
+			margin: 0;
+			font-family: 'rawline', Arial, Helvetica, sans-serif;
+			font-size: 4em;
+		}
+
+		.bannerspan p {
+			font-family: 'rawline', Arial, Helvetica, sans-serif;
+			font-size: 2em;
+		}
 
 	.box {
 		border: solid 1px #dbdbdb;
