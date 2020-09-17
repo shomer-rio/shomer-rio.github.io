@@ -3230,12 +3230,22 @@
 			font-size: 0.8em;
 		}
 
-		#contact p {
+		#contact i {
 			display: block;
+			font-family: 'FontAwesome';
+		}
+
+		#contact i span {
+			font-family: 'rawline', Arial, Helvetica, sans-serif;
 		}
 
 		#contact a {
 			display: block;
+			font-family: 'FontAwesome';
+		}
+
+		#contact a span {
+			font-family: 'rawline', Arial, Helvetica, sans-serif;
 		}
 
 /* Footer */
