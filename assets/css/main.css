@@ -3213,16 +3213,20 @@
 /* Contact */
 
 	#contact {
+		font-family: 'rawline', Arial, Helvetica, sans-serif;
 		display: block;
 	}
 
 		#contact h1 {
+			font-family: 'R';
 			display: block;
+			padding: 0;
 			font-size: 1em;
 		}
 
 		#contact h2 {
 			display: block;
+			padding: 0;
 			font-size: 0.8em;
 		}
 
