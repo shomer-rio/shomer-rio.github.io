@@ -7,12 +7,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 
-		<!-- redirecionamento temporario -->
-		<script type="text/javascript">
-			window.location.replace("http://shomer-rio.github.io/404");
-		</script>
-		<!-- fim do redirecionamento temporario -->
-
 	</head>
 	<body class="subpage" style="font-family: 'Comic Neue', cursive;">
 
@@ -46,6 +40,7 @@
 		<!-- Footer -->
 		<footer id="footer">
 			<div class="inner">
+				<div id="contact"></div>
 				<div class="flex">
 					<div class="copyright">
 						Hashomer Hatzair Rio &copy; 2020
@@ -54,9 +49,12 @@
 					<ul class="icons">
 						<li>
 							<a href="https://pt-br.facebook.com/hashomerrio/" class="icon fa-facebook">
-								<span class="label">Facebook</span></a></li>
+								<span class="label">Facebook</span></a>
+						</li>
+						<li>
 							<a href="https://www.instagram.com/hashomerhatzairrio/" class="icon fa-instagram">
-							<span class="label">Instagram</span></a></li>
+							<span class="label">Instagram</span></a>
+						</li>
 						</ul>
 				</div>
 			</div>
@@ -67,6 +65,11 @@
 		<script src="../assets/js/skel.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
+		<!-- Contacts -->
+		<script src="../assets/js/contact.js"></script>
+		<script type="text/javascript">
+			buildContact("../assets/js/json/contact.json");
+		</script>
 
 		<style>
 			phantomtext {
