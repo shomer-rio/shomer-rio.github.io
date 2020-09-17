@@ -3235,7 +3235,7 @@
 	}
 
 		#contact h1 {
-			font-family: 'R';
+			color: #444444;
 			display: block;
 			padding: 0;
 			margin: 0;
@@ -3243,6 +3243,7 @@
 		}
 
 		#contact h2 {
+			color: #444444;
 			display: block;
 			padding: 0;
 			margin: 0 0 5pt 0;
