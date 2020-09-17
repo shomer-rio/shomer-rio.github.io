@@ -3221,12 +3221,14 @@
 			font-family: 'R';
 			display: block;
 			padding: 0;
+			margin: 0;
 			font-size: 1em;
 		}
 
 		#contact h2 {
 			display: block;
 			padding: 0;
+			margin: 0;
 			font-size: 0.8em;
 		}
 
