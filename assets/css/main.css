@@ -1859,7 +1859,7 @@
 		}
 
 	section.wrapper, article.wrapper {
-		padding: 6em 0;
+		padding: 3em 0;
 	}
 
 		section.wrapper header, article.wrapper header {
@@ -2412,6 +2412,19 @@
 			text-align: justify;
 			font-family: 'rawline', Arial, Helvetica, sans-serif;
 			font-size: 1.2em;
+		}
+
+		.bannerspan p.bannerlink {
+			text-decoration: none;
+			text-transform: none;
+			text-align: right;
+			color: #444444;
+			font-family: 'rawline', Arial, Helvetica, sans-serif;
+			font-size: 1.6	em;
+		}
+
+		.bannerspan:hover p.bannerlink {
+			color: #004aad;
 		}
 
 	.box {
