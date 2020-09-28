@@ -3278,6 +3278,13 @@
 		display: block;
 	}
 
+		#contact a.logo img {
+			display: block;
+			text-align: right;
+			height: 5em;
+			width: 5em;
+		}
+
 		#contact h1 {
 			color: #444444;
 			display: block;
