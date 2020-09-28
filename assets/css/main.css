@@ -3280,6 +3280,7 @@
 
 		#contact .info {
 			display: block;
+			text-align: left;
 		}
 
 		#contact a.logo {
@@ -3386,8 +3387,7 @@
 	@media screen and (max-width: 736px) {
 
 		#contact a.logo img {
-			height: 3.3em;
-			width: 3.3em;
+			display: hidden;
 		}
 
 		#contact .info h1 {
@@ -3411,8 +3411,7 @@
 	@media screen and (max-width: 480px) {
 
 		#contact a.logo img {
-			height: 3em;
-			width: 3em;
+			display: hidden;
 		}
 
 		#contact .info h1 {
