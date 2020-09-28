@@ -3279,11 +3279,18 @@
 		display: block;
 	}
 
+		#contact .info {
+			float: left;
+		}
+
+		#contact a.logo {
+			float: left;
+		}
+
 		#contact a.logo img {
 			display: block;
-			text-align: right;
-			height: 5em;
-			width: 5em;
+			height: 7.5em;
+			width: 7.5em;
 		}
 
 		#contact .info h1 {
