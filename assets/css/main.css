@@ -2392,7 +2392,7 @@
 			padding: 0;
 			margin: 0;
 			font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
-			font-size: 3.6em;
+			font-size: 3.2em;
 			text-shadow: -0.2vmin 0.2vmin #222;
 		}
 
@@ -2426,6 +2426,52 @@
 		.bannerspan:hover p.bannerlink {
 			color: #004aad;
 		}
+
+		/* Mobile */
+		@media screen and (max-width: 980px) {
+			.bannerspan h1 {
+				font-size: 2.6em;
+			}
+
+			.bannerspan h2 {
+				font-size: 3.8em;
+			}
+	
+			.bannerspan p {
+				font-size: 1.1em;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			.bannerspan h1 {
+				font-size: 2.2em;
+			}
+
+			.bannerspan h2 {
+				font-size: 3.1em;
+			}
+	
+			.bannerspan p {
+				font-size: 1em;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.bannerspan h1 {
+				font-size: 1.6em;
+			}
+
+			.bannerspan h2 {
+				font-size: 2.6em;
+			}
+	
+			.bannerspan p {
+				font-size: 0.8em;
+			}
+		}
+	
+
+	/* Box */
 
 	.box {
 		border: solid 1px #dbdbdb;
