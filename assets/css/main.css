@@ -3286,7 +3286,7 @@
 			width: 5em;
 		}
 
-		#contact h1 {
+		#contact .info h1 {
 			color: #444444;
 			display: block;
 			padding: 0;
@@ -3294,7 +3294,7 @@
 			font-size: 1.3em;
 		}
 
-		#contact h2 {
+		#contact .info h2 {
 			color: #444444;
 			display: block;
 			padding: 0;
@@ -3302,7 +3302,7 @@
 			font-size: 1.1em;
 		}
 
-		#contact a {
+		#contact .info a {
 			text-decoration: none;
 			color: #444444;
 			display: block;
@@ -3311,17 +3311,17 @@
 			font-size: 0.9em;
 		}
 
-		#contact a:hover {
+		#contact .info a:hover {
 			color: #111111;
 		}
 
-		#contact i {
+		#contact .info i {
 			color: inherit;
 			font-family: 'FontAwesome';
 			margin-right: 5pt;
 		}
 
-		#contact span {
+		#contact .info span {
 			color: inherit;
 			font-family: 'rawline', Arial, Helvetica, sans-serif;
 		}
@@ -3335,19 +3335,19 @@
 			width: 3em;
 		}
 
-		#contact h1 {
+		#contact .info h1 {
 			font-size: 1.2em;
 		}
 
-		#contact h2 {
+		#contact .info h2 {
 			font-size: 1em;
 		}
 
-		#contact a {
+		#contact .info a {
 			font-size: 0.8em;
 		}
 
-		#contact i {
+		#contact .info i {
 			font-size: 0.8em;
 		}
 
@@ -3360,19 +3360,19 @@
 			width: 3em;
 		}
 
-		#contact h1 {
+		#contact .info h1 {
 			font-size: 1.1em;
 		}
 
-		#contact h2 {
+		#contact .info h2 {
 			font-size: 0.9em;
 		}
 
-		#contact a {
+		#contact .info a {
 			font-size: 0.7em;
 		}
 
-		#contact i {
+		#contact .info i {
 			font-size: 0.7em;
 		}
 	}
@@ -3384,19 +3384,19 @@
 			width: 3.3em;
 		}
 
-		#contact h1 {
+		#contact .info h1 {
 			font-size: 1em;
 		}
 
-		#contact h2 {
+		#contact .info h2 {
 			font-size: 0.8em;
 		}
 
-		#contact a {
+		#contact .info a {
 			font-size: 0.6em;
 		}
 
-		#contact i {
+		#contact .info i {
 			font-size: 0.6em;
 		}
 
@@ -3409,19 +3409,19 @@
 			width: 3em;
 		}
 
-		#contact h1 {
+		#contact .info h1 {
 			font-size: 0.9em;
 		}
 
-		#contact h2 {
+		#contact .info h2 {
 			font-size: 0.7em;
 		}
 
-		#contact a {
+		#contact .info a {
 			font-size: 0.5em;
 		}
 
-		#contact i {
+		#contact .info i {
 			font-size: 0.5em;
 		}
 

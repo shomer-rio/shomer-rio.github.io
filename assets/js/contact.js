@@ -17,9 +17,9 @@ function buildContact( filePath ) {
                 <span>${json['phone']}</span>
             </a>
         </div>
-        <div class="logo">
+        <a href="./" class="logo">
             <img src="https://shomer-rio.github.io/assets/images/color_semel_750px.png" alt="Shomer"/>
-        </div>
+        </a>
         `);
     });
 }
