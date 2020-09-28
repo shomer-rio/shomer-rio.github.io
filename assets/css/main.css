@@ -2270,6 +2270,7 @@
 	}
 
 	#chanichimot-pt {
+		cursor: default;
 		color: #111111;
 		font-weight: bold;
 		font-family: 'Comic Neue', cursive;
@@ -2293,6 +2294,7 @@
 	}
 
 	#chanichimot-he {
+		cursor: default;
 		color: #111111;
 		font-family: 'Comix';
 		font-size: 7em;
