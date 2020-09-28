@@ -3276,15 +3276,14 @@
 	#contact {
 		font-family: 'rawline', Arial, Helvetica, sans-serif;
 		margin-bottom: 1em;
-		display: block;
 	}
 
 		#contact .info {
-			float: left;
+			display: block;
 		}
 
 		#contact a.logo {
-			float: left;
+			display: block;
 		}
 
 		#contact a.logo img {
