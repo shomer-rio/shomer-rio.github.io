@@ -21,9 +21,9 @@
 	 margin: 0;
 	 font-size: 15px;
 	 box-sizing: border-box;
-	 color: rgba(0, 74, 173, .8);
+	 color: #004aad;
 	 font-family: 'rawline', Arial, Helvetica, sans-serif;
-	 font-weight: normal;
+	 font-weight: bold;
 	 line-height: 25px;
 }
  .timeline:before {
