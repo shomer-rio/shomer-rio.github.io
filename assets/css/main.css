@@ -2981,7 +2981,7 @@
 		}
 
 	#header {
-		color: #f0e8d2;
+		color:#ffffff;
 		cursor: default;
 		height: 5em;
 		left: 0;
@@ -3031,7 +3031,7 @@
 		}
 
 			#header a:hover {
-				color: #ffffff;
+				color: #f0e8d2;
 			}
 
 			#header a:last-child {
