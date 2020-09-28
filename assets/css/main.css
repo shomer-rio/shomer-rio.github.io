@@ -2981,7 +2981,7 @@
 		}
 
 	#header {
-		color: #f0f0f0;
+		color: #f0e8d2;
 		cursor: default;
 		height: 5em;
 		left: 0;
@@ -3025,6 +3025,7 @@
 			display: inline-block;
 			padding: 0 0.75em;
 			color: inherit;
+			font-weight: bold;
 			text-decoration: none;
 			font-size: .8em;
 		}
