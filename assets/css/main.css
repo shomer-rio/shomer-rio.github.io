@@ -3435,7 +3435,7 @@
 	@media screen and (max-width: 736px) {
 
 		#contact a.logo img {
-			display: hidden;
+			display: none;
 		}
 
 		#contact .info h1 {
@@ -3459,7 +3459,7 @@
 	@media screen and (max-width: 480px) {
 
 		#contact a.logo img {
-			display: hidden;
+			display: none;
 		}
 
 		#contact .info h1 {
