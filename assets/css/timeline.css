@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One');
+@import 'https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css';
  .timeline {
 	 display: flex;
 	 margin: 0 auto;
@@ -14,16 +14,16 @@
 	 transition: 0.4s;
 	 padding: 0 10px;
 	 box-sizing: border-box;
-	 font-family: 'Pathway Gothic One', sans-serif;
+	 font-family: 'rawline', Arial, Helvetica, sans-serif;
 	 color: rgba(0, 74, 173, .8);
 }
  .timeline__content-desc {
 	 margin: 0;
 	 font-size: 15px;
 	 box-sizing: border-box;
-	 color: rgba(0, 74, 173, .8);
-	 font-family: Cardo;
-	 font-weight: normal;
+	 color: #004aad;
+	 font-family: 'rawline', Arial, Helvetica, sans-serif;
+	 font-weight: bold;
 	 line-height: 25px;
 }
  .timeline:before {
@@ -58,8 +58,9 @@
 	 position: absolute;
 	 color: rgba(0, 74, 173, .75);
 	 font-size: 1.5em;
-	 font-family: 'Pathway Gothic One', sans-serif;
-	 border-left: 2px solid rgba(0, 74, 173, .75);
+	 font-weight: bold;
+	 font-family: 'rawline', Arial, Helvetica, sans-serif;
+	 border-left: 2px solid #004aad;
 	 top: 70%;
 	 margin-top: -5px;
 	 padding-left: 15px;
@@ -75,7 +76,7 @@
 	 left: calc(-200% - 39px);
 	 padding-left: 0;
 	 border-left: none;
-	 border-right: 2px solid rgba(0, 74, 173, .75);
+	 border-right: 2px solid #004aad;
 	 padding-right: 15px;
 }
  .timeline-item--active {
@@ -139,24 +140,22 @@
  .timeline-header__title {
 	 color: rgba(0, 74, 173, .8);
 	 font-size: 46px;
-	 font-family: Cardo;
+	 font-family: 'rawline', Arial, Helvetica, sans-serif;
 	 font-weight: normal;
 	 margin: 0;
 }
  .timeline-header__subtitle {
 	 color: rgba(0, 74, 173, .5);
-	 font-family: 'Pathway Gothic One', sans-serif;
+	 font-family: 'rawline', Arial, Helvetica, sans-serif;
 	 font-size: 16px;
 	 letter-spacing: 5px;
 	 margin: 10px 0 0 0;
 	 font-weight: normal;
 }
- 
-
 
 /* Mobile */
 .timeline-event {
-	font-family: 'Pathway Gothic One', sans-serif;
+	font-family: 'rawline', Arial, Helvetica, sans-serif;
 }
 
 .timeline-event-content {

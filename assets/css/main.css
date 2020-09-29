@@ -1678,7 +1678,7 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2270,6 +2270,7 @@
 	}
 
 	#chanichimot-pt {
+		cursor: default;
 		color: #111111;
 		font-weight: bold;
 		font-family: 'Comic Neue', cursive;
@@ -2293,6 +2294,7 @@
 	}
 
 	#chanichimot-he {
+		cursor: default;
 		color: #111111;
 		font-family: 'Comix';
 		font-size: 7em;
@@ -2370,7 +2372,7 @@
 	.bannerspan {
 		display: block;
 		height: 100%;
-		width: 55em;
+		width: 100%;
 		padding-left: 20pt;
 		padding-right: 20pt;
 		margin-left: auto;
@@ -2392,7 +2394,7 @@
 			padding: 0;
 			margin: 0;
 			font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
-			font-size: 3.6em;
+			font-size: 3.2em;
 			text-shadow: -0.2vmin 0.2vmin #222;
 		}
 
@@ -2426,6 +2428,52 @@
 		.bannerspan:hover p.bannerlink {
 			color: #004aad;
 		}
+
+		/* Mobile */
+		@media screen and (max-width: 980px) {
+			.bannerspan h1 {
+				font-size: 2.6em;
+			}
+
+			.bannerspan h2 {
+				font-size: 3.8em;
+			}
+	
+			.bannerspan p {
+				font-size: 1.1em;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			.bannerspan h1 {
+				font-size: 2.2em;
+			}
+
+			.bannerspan h2 {
+				font-size: 3.1em;
+			}
+	
+			.bannerspan p {
+				font-size: 1em;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.bannerspan h1 {
+				font-size: 1.6em;
+			}
+
+			.bannerspan h2 {
+				font-size: 2.6em;
+			}
+	
+			.bannerspan p {
+				font-size: 0.8em;
+			}
+		}
+	
+
+	/* Box */
 
 	.box {
 		border: solid 1px #dbdbdb;
@@ -2981,7 +3029,7 @@
 		}
 
 	#header {
-		color: #d4e0ef;
+		color:#ffffff;
 		cursor: default;
 		height: 5em;
 		left: 0;
@@ -3025,12 +3073,13 @@
 			display: inline-block;
 			padding: 0 0.75em;
 			color: inherit;
+			font-weight: bold;
 			text-decoration: none;
 			font-size: .8em;
 		}
 
 			#header a:hover {
-				color: #ffffff;
+				color: #f0e8d2;
 			}
 
 			#header a:last-child {
@@ -3081,6 +3130,11 @@
 			top: 2em;
 		}
 
+		#header a.logo img {
+			height: 2.5em;
+			width: 2.5em;
+		}
+
 	}
 
 	@media screen and (max-width: 480px) {
@@ -3088,6 +3142,11 @@
 		#header {
 			top: 1em;
 			min-width: 320px;
+		}
+
+		#header a.logo img {
+			height: 2em;
+			width: 2em;
 		}
 
 	}
@@ -3275,10 +3334,24 @@
 	#contact {
 		font-family: 'rawline', Arial, Helvetica, sans-serif;
 		margin-bottom: 1em;
-		display: block;
 	}
 
-		#contact h1 {
+		#contact .info {
+			display: block;
+			text-align: left;
+		}
+
+		#contact a.logo {
+			display: block;
+		}
+
+		#contact a.logo img {
+			display: block;
+			height: 7.5em;
+			width: 7.5em;
+		}
+
+		#contact .info h1 {
 			color: #444444;
 			display: block;
 			padding: 0;
@@ -3286,7 +3359,7 @@
 			font-size: 1.3em;
 		}
 
-		#contact h2 {
+		#contact .info h2 {
 			color: #444444;
 			display: block;
 			padding: 0;
@@ -3294,7 +3367,7 @@
 			font-size: 1.1em;
 		}
 
-		#contact a {
+		#contact .info a {
 			text-decoration: none;
 			color: #444444;
 			display: block;
@@ -3303,21 +3376,119 @@
 			font-size: 0.9em;
 		}
 
-		#contact a:hover {
+		#contact .info a:hover {
 			color: #111111;
 		}
 
-		#contact i {
+		#contact .info i {
 			color: inherit;
 			font-family: 'FontAwesome';
 			margin-right: 5pt;
 		}
 
-		#contact span {
+		#contact .info span {
 			color: inherit;
 			font-family: 'rawline', Arial, Helvetica, sans-serif;
 		}
+	
+	/* Mobile */
 
+	@media screen and (max-width: 1280px) {
+	
+		#contact a.logo img {
+			height: 3em;
+			width: 3em;
+		}
+
+		#contact .info h1 {
+			font-size: 1.2em;
+		}
+
+		#contact .info h2 {
+			font-size: 1em;
+		}
+
+		#contact .info a {
+			font-size: 0.8em;
+		}
+
+		#contact .info i {
+			font-size: 0.8em;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#contact a.logo img {
+			height: 3em;
+			width: 3em;
+		}
+
+		#contact .info h1 {
+			font-size: 1.1em;
+		}
+
+		#contact .info h2 {
+			font-size: 0.9em;
+		}
+
+		#contact .info a {
+			font-size: 0.7em;
+		}
+
+		#contact .info i {
+			font-size: 0.7em;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#contact a.logo img {
+			display: none;
+		}
+
+		#contact .info h1 {
+			font-size: 1em;
+		}
+
+		#contact .info h2 {
+			font-size: 0.8em;
+		}
+
+		#contact .info a {
+			font-size: 0.6em;
+		}
+
+		#contact .info i {
+			font-size: 0.6em;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#contact a.logo img {
+			display: none;
+		}
+
+		#contact .info h1 {
+			font-size: 0.9em;
+		}
+
+		#contact .info h2 {
+			font-size: 0.7em;
+		}
+
+		#contact .info a {
+			font-size: 0.5em;
+		}
+
+		#contact .info i {
+			font-size: 0.5em;
+		}
+
+	}
 /* Footer */
 
 	#footer .inner {
