@@ -3122,6 +3122,10 @@
 			width: 2.5em;
 		}
 
+		.subpage #header a.logo img {
+			height: 2.5em;
+			width: 2.5em;
+		}
 	}
 
 	@media screen and (max-width: 480px) {
@@ -3136,6 +3140,10 @@
 			width: 2em;
 		}
 
+		.subpage #header a.logo img {
+			height: 2em;
+			width: 2em;
+		}
 	}
 
 /* Nav */
