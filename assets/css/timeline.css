@@ -157,10 +157,12 @@
 .timeline-event {
 	font-family: 'rawline', Arial, Helvetica, sans-serif;
 	padding: 10px 0;
+	margin: auto auto;
 	box-sizing: border-box;
-	width: 100%;
+	width: 90%;
 	display: block;
 	position: relative;
+	border-top: 1pt solid #004aad
 }
 
 .timeline-event-content {
