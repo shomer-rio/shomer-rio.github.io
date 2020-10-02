@@ -156,6 +156,11 @@
 /* Mobile */
 .timeline-event {
 	font-family: 'rawline', Arial, Helvetica, sans-serif;
+	padding: 10px 0;
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	position: relative;
 }
 
 .timeline-event-content {
@@ -163,6 +168,14 @@
 }
 
 h1.timeline-event-date {
+	font-weight: normal;
+	font-size: 66px;
+	margin: -10px 0 0 0;
+	transition: 0.4s;
+	padding: 0 10px;
+	box-sizing: border-box;
+	font-family: 'rawline', Arial, Helvetica, sans-serif;
+	color: rgba(0, 74, 173, .8);
 	display: block;
 }
 
@@ -176,4 +189,6 @@ p.timeline-event-text {
 
 img.timeline-event-img {
 	display: block;
+	max-width: 100%;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
 }
