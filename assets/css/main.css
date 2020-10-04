@@ -1681,6 +1681,10 @@
 		margin: 0 0 1em 0;
 	}
 
+	article p {
+		text-align: justify;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #004aad;
 		font-weight: bolder;
@@ -2416,12 +2420,25 @@
 			font-size: 1.2em;
 		}
 
-		.bannerspan a.bannerlink {
-			color: #444444;
+		.bannerspan .bannerlink {
+			-moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+			-webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+			-ms-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+			transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+			background-color: #444444 !important;
 		}
 
-		.bannerspan:hover a.bannerlink {
-			color: #004aad;
+
+		.bannerspan:hover .bannerlink {
+			background-color: #004aad !important;
+		}
+
+		.bannerspan:hover .bannerlink:hover {
+			-moz-transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
+			-ms-transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
+			transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
+			background-color:#6692c8 !important;
 		}
 
 		/* Mobile */
@@ -2433,9 +2450,15 @@
 			.bannerspan h2 {
 				font-size: 3.8em;
 			}
+
+			
 		}
 
 		@media screen and (max-width: 736px) {
+			.bannerspan h1 {
+				color: #004aad;
+			}
+
 			.bannerspan h1 {
 				font-size: 2.2em;
 			}
@@ -2443,19 +2466,27 @@
 			.bannerspan h2 {
 				font-size: 3.1em;
 			}
+			
+			.bannerspan .bannerlink {
+				background-color: #004aad !important;
+			}
 		}
 
 		@media screen and (max-width: 480px) {
 			.bannerspan h1 {
-				font-size: 200%;
+				color: #004aad;
+				font-size: 220%;
 			}
 
 			.bannerspan h2 {
 				font-size: 2.6em;
 			}
 			.bannerspan p {
-				text-align: center;
 				font-size: inherit;
+			}
+
+			.bannerspan .bannerlink {
+				background-color: #004aad !important;
 			}
 		}
 	
