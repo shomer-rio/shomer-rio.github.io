@@ -20,6 +20,7 @@
  .timeline__content-desc {
 	 margin: 0;
 	 font-size: 15px;
+	 text-align: justify;
 	 box-sizing: border-box;
 	 color: #004aad;
 	 font-family: 'rawline', Arial, Helvetica, sans-serif;
@@ -186,6 +187,7 @@ h2.timeline-event-title {
 
 p.timeline-event-text {
 	display: block;
+	text-align: justify;
 }
 
 img.timeline-event-img {
