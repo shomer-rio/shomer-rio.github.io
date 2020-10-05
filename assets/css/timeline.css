@@ -148,10 +148,10 @@
  .timeline-header__subtitle {
 	 color: rgba(0, 74, 173, .5);
 	 font-family: 'rawline', Arial, Helvetica, sans-serif;
-	 font-size: 16px;
+	 font-size: 24px;
 	 letter-spacing: 5px;
 	 margin: 10px 0 0 0;
-	 font-weight: normal;
+	 font-weight: bold;
 }
 
 /* Mobile */
