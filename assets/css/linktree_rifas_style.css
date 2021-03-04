@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
     --bgColor: #eeeeee;
-    --accentColor: #204051;
+    --accentColor: #0d35e9;
     --font: 'Roboto', sans-serif;
 }
 
@@ -74,5 +74,5 @@ h1{
 
 .link:hover{
     background-color: #3b6978;
-    color: #ffffff;
+    color: #2e4fe4;
 }
